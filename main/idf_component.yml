@@ -2,4 +2,5 @@
 dependencies:
   usb_host_cdc_ecm:
     git: https://github.com/Rojer-X86/usb_host_cdc_ecm
+    version: multi-vendor
     path: .
