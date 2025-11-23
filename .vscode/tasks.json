@@ -1,0 +1,31 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "ESP-IDF: Build",
+      "type": "shell",
+      "command": "idf.py build",
+      "group": {
+        "kind": "build",
+        "isDefault": true
+      },
+      "problemMatcher": [
+        "$gcc"
+      ]
+    },
+    {
+      "label": "ESP-IDF: Flash",
+      "type": "shell",
+      "command": "idf.py -p /dev/ttyUSB0 flash",
+      "problemMatcher": [
+        "$gcc"
+      ]
+    },
+    {
+      "label": "ESP-IDF: Monitor",
+      "type": "shell",
+      "command": "idf.py -p /dev/ttyUSB0 monitor"
+    }
+  ]
+}
+
